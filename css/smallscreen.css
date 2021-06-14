@@ -1,0 +1,94 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: 
+        "ti ti"
+        "tt tt"
+        "si si"
+        "st st"
+        "ap ap"
+        "or or"
+        "customer customer"
+        "im1 im2"
+        "im3 im4";
+}
+
+.main .transform-text {
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.main .transform-text h3 {
+    line-height: 1.2;
+}
+
+.main .transform-text .btn {
+    text-align: center;
+}
+
+.main .transform-text .btn::after {
+    left: 28%;
+    bottom: 0;
+}
+
+.main .transform-img {
+    height: 50vh;
+}
+
+/* Stand out */
+.main .stand-out-text {
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.main .stand-out-text h3 {
+    line-height: 1.2;
+}
+
+.main .stand-out-text a {
+    text-align: center;
+}
+
+.main .stand-out-text a::after {
+    right: 28%;
+    bottom: 0;
+}
+
+.main .stand-out-img {
+    height: 50vh;
+}
+
+/* Graphic Design */
+.main .apple {
+    height: 65vh;
+    width: 100%;
+    padding: 4rem 1rem;
+}
+
+.main .apple h3 {
+    font-size: 28px;
+}
+
+.main .apple p {
+    font-size: 15px;
+}
+
+/* Photography */
+.main .orange {
+    height: 65vh;
+    width: 100%;
+    padding: 4rem 1rem;
+}
+
+.main .orange h3 {
+    font-size: 28px;
+}
+
+.main .orange p {
+    font-size: 15px;
+}
