@@ -6,6 +6,13 @@
     --ff2: 'Barlow', serif;
 
     --primary-light-blue: hsl(198, 81%, 61%);
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-cyan-graphic: hsl(167, 40%, 24%);
+    --dark-blue-photograhy: hsl(198, 62%, 26%);
+    --dark-cyan-footer: hsl(168, 34%, 41%);
+    --dark-greyish-blue-text: hsl(232, 10%, 55%);
+    --very-dark-greyish-blue-text: hsl(213, 9%, 39%);
 }
 
 * {
@@ -15,7 +22,9 @@
 }
 
 body {
+    position: relative;
     font-family: 'Barlow', serif;
+    font-size: 18px;
 }
 
 /* Utility Classe */
@@ -92,6 +101,7 @@ h3 {
         "tt tt ti ti"
         "si si st st"
         "ap ap or or"
+        "customer customer customer customer"
         "im1 im2 im3 im4";
 }
 /* Transform */
@@ -110,6 +120,7 @@ h3 {
 
 .main .transform-text p {
     margin-bottom: 2rem;
+    color: var(--dark-greyish-blue-text);
 }
 
 .main .transform-text .btn {
@@ -127,10 +138,11 @@ h3 {
     position: absolute;
     left: -4px;
     bottom: 0;
-    background: rgb(255, 255, 66);
-    height: 0.3em;
+    background: var(--yellow);
+    height: 0.4em;
     width: 7.5em;
     border-radius: 1rem;
+    z-index: -1;
 }
 
 .main .transform-img {
@@ -161,6 +173,7 @@ h3 {
 
 .main .stand-out-text p {
     margin-bottom: 2rem;
+    color: var(--dark-greyish-blue-text);
 }
 
 .main .stand-out-text a {
@@ -178,8 +191,100 @@ h3 {
     position: absolute;
     right: -4px;
     bottom: 0;
-    background: rgb(243, 88, 88);
-    height: 0.3em;
+    background: var(--soft-red);
+    height: 0.4em;
     width: 7.5em;
     border-radius: 1rem;
+    z-index: -1;
+}
+
+/* Graphic Design */
+.main .apple{
+    grid-area: ap;
+    background: url("/css/images/desktop/image-graphic-design.jpg") no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10rem;
+    padding-bottom: 4rem;
+    color: var(--dark-cyan-graphic);
+}
+
+/* Photography */
+.main .orange {
+    grid-area: or;
+    background: url("/css/images/desktop/image-photography.jpg") no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10rem;
+    padding-bottom: 4rem;
+    color: var(--dark-blue-photograhy);
+}
+
+/* Testimonials */
+.main .testimonials {
+    grid-area: customer;
+}
+
+.main .testimonials .testimonial-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 6rem;
+}
+
+.main .testimonials h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 6rem;
+    word-spacing: 0.7em;
+    letter-spacing: 0.2em;
+    color: var(--dark-greyish-blue-text);
+}
+
+.main .testimonials .testimonial-flex .testimonial {
+    padding: 2rem;
+    text-align: center;
+}
+
+.main .testimonials .testimonial-flex .testimonial img {
+    border-radius: 50%;
+}
+
+.main .testimonials .testimonial-flex .testimonial p:nth-child(2) {
+    padding-bottom: 3rem;
+    color: var(--very-dark-greyish-blue-text);
+}
+
+
+
+
+/* Images */
+.main .img1 {
+    grid-area: im1;
+    background: url("/css/images/desktop/image-gallery-milkbottles.jpg") no-repeat center center/cover;
+    height: 300px;
+}
+
+.main .img2 {
+    grid-area: im2;
+    background: url("/css/images/desktop/image-gallery-orange.jpg") no-repeat center center/cover;
+    height: 300px;;
+}
+
+.main .img3 {
+    grid-area: im3;
+    background: url("/css/images/desktop/image-gallery-cone.jpg") no-repeat center center/cover;
+    height: 300px;;
+}
+
+.main .img4 {
+    grid-area: im4;
+    background: url("/css/images/desktop/image-gallery-sugarcubes.jpg") no-repeat center center/cover;
+    height: 300px;;
 }
