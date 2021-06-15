@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/N-Endy/sunnyside)
-- Live Site URL: [Add live site URL here](https://n-endy.github.io/sunnyside/)
+- Solution URL: (https://github.com/N-Endy/sunnyside)
+- Live Site URL: (https://nel-sunnyside.netlify.app/)
 
 ## My process
 
