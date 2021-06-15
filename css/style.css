@@ -304,8 +304,10 @@ h3 {
 }
 
 .footer h3 {
+    font-family: var(--ff2);
     color: var(--dark-cyan-footer);
     font-size: 30px;
+    font-weight: bolder;
 }
 
 .footer ul {

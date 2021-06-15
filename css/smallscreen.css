@@ -92,3 +92,22 @@
 .main .orange p {
     font-size: 15px;
 }
+
+/* Testimonials */
+.main .testimonials .testimonial-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 1.5rem;
+}
+
+.main .testimonials h3 {
+    padding-top: 4rem;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    font-size: 18px;
+}
+
+.main .testimonials .testimonial-flex .testimonial {
+    padding: 0.5rem;
+}
