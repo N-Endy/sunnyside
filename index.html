@@ -21,17 +21,18 @@
   <header class="header">
     <nav class="nav-bar">
       <img src="/css/images/logo.svg" alt="logo">
-      <ul>
+      <ul id="ul" class="no-display">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <img onclick="toggleHamburger()" src="/css/images/icon-hamburger.svg" alt="hamburger" class="hamburger">
     </nav>
 
     <div class="header-text text-align">
       <h1>We are creatives</h1>
-      <div class="line"></div>
+      <img src="/css/images/icon-arrow-down.svg" alt="arrow-down">
     </div>
   </header>
   
@@ -107,11 +108,16 @@
       <li><img src="/css/images/icon-twitter.svg" alt=""></li>
       <li><img src="/css/images/icon-pinterest.svg" alt=""></li>
     </ul>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/N-Endy">Okafor Nnamdi Nelson</a>.
+    </div>
   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/N-Endy">Okafor Nnamdi Nelson</a>.
-  </div>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>

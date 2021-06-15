@@ -1,3 +1,52 @@
+/* Header */
+.header {
+    height: 80vh;
+    position: relative;
+}
+
+.header .nav-bar {
+    padding: 2rem 1rem;
+}
+
+.header .nav-bar .no-display {
+    display: none;
+}
+
+.display {
+    flex-direction: column;
+    position: absolute;
+    background: white;
+    top: 18%;
+    left: 0.5em;
+    width: 87%;
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav-bar ul li {
+    padding: 1.5rem 0;
+}
+
+.header .nav-bar ul li a{
+    font-size: 22px;
+    padding: 1rem 2rem;
+    color: var(--dark-greyish-blue-text);
+    
+}
+
+.header .nav-bar ul li a:hover {
+    background: hsl(51, 100%, 49%);
+    border-radius: 2rem;
+    color: #000;
+}
+
+.header .nav-bar .hamburger {
+    display: flex;
+}
+
+/* Main */
 .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
